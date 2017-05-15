@@ -247,7 +247,6 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  overflow: hidden;
 }
 
 /*--------------公用-------------*/
@@ -261,6 +260,10 @@ body {
 .school-box .menu li:first-of-type {
   background-size: 60%;
   background-position: 50% 25%;
+}
+
+.ZindexMax {
+  z-index: 999999! important;
 }
 
 .zindexMax {
@@ -378,6 +381,102 @@ body {
   100% {
     opacity: 0.1;
   }
+}
+
+/*--------------loading-------------*/
+
+.loading {
+  background-color: #FF4545;
+}
+
+.loading .precent-box {
+  width: 76%;
+  height: 28%;
+}
+
+.loading .precent-box .car-box {
+  width: 30%;
+  height: 28%;
+  left: 0;
+  position: relative;
+}
+
+.loading .precent-box .car-box img {
+  width: 2.34375rem;
+  height: 1.328125rem;
+  float: right;
+}
+
+.loading .precent-box .car-box .lung-box {
+  width: 2.34375rem;
+  height: 1.328125rem;
+  right: -1%;
+  top: 36%;
+}
+
+.loading .precent-box .car-box .lung-box img.lung-01 {
+  width: 0.75rem;
+  height: 0.75rem;
+  left: 0;
+  top: 0;
+  -webkit-animation: changeRotate 1s linear infinite;
+  animation: changeRotate 1s linear infinite;
+}
+
+.loading .precent-box .car-box .lung-box img.lung-02 {
+  width: 0.75rem;
+  height: 0.75rem;
+  right: 6%;
+  top: 0;
+  -webkit-animation: changeRotate 1s linear infinite;
+  animation: changeRotate 1s linear infinite;
+}
+
+.loading .precent-box .precent-line {
+  width: 100%;
+  position: relative;
+  left: 0;
+  top: 1%;
+}
+
+[data-dpr="1"] .loading .precent-box .precent-line {
+  height: 4px;
+  border: 0.5px solid #fff;
+  border-radius: 2.5px;
+}
+
+[data-dpr="2"] .loading .precent-box .precent-line {
+  height: 8px;
+  border: 1px solid #fff;
+  border-radius: 5px;
+}
+
+[data-dpr="3"] .loading .precent-box .precent-line {
+  height: 12px;
+  border: 1.5px solid #fff;
+  border-radius: 7.5px;
+}
+
+.loading .precent-box .precent-line span {
+  width: 0;
+  height: 100%;
+  background-color: #7386D5;
+  display: inherit;
+  overflow: hidden;
+  background-size: 0.234375rem 0.234375rem;
+  border-top-right-radius: 0.078125rem;
+  border-bottom-right-radius: 0.078125rem;
+  background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.3) 25%, transparent 0, transparent 50%, rgba(255, 255, 255, 0.3) 0, rgba(255, 255, 255, 0.3) 75%, transparent 0, transparent);
+  border-top-left-radius: 0.078125rem;
+  border-bottom-left-radius: 0.078125rem;
+}
+
+.loading .precent-box .precent-num {
+  font-size: 0.5rem;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-top: 3%;
 }
 
 /*--------------导航-------------*/
@@ -614,7 +713,7 @@ body {
 
 .p1 .content-box {
   height: 84.859%;
-  overflow-y: scroll! important;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
 }
 
@@ -680,8 +779,6 @@ body {
 .p1 .content-box .news-box .hot-news {
   -webkit-transform: translateY(200%);
   transform: translateY(200%);
-  -webkit-animation: fadeUp .5s linear 1s forwards;
-  animation: fadeUp .5s linear 1s forwards;
 }
 
 .p1 .content-box .news-box .hot-news .themes {
@@ -854,11 +951,14 @@ body {
   background-position: center;
 }
 
+.p1 .content-box .news-box .hot-news.current {
+  -webkit-animation: fadeUp .5s linear .5s forwards;
+  animation: fadeUp .5s linear .5s forwards;
+}
+
 .p1 .content-box .news-box .school-news {
   -webkit-transform: translateY(100%);
   transform: translateY(100%);
-  -webkit-animation: fadeUp .5s linear 1.5s forwards;
-  animation: fadeUp .5s linear 1.5s forwards;
   margin-top: 0.15625rem;
 }
 
@@ -1030,6 +1130,11 @@ body {
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+}
+
+.p1 .content-box .news-box .school-news.current {
+  -webkit-animation: fadeUp .5s linear 1s forwards;
+  animation: fadeUp .5s linear 1s forwards;
 }
 
 .p1 .content-box.infor-p1 {
@@ -2415,5 +2520,39 @@ body {
     -webkit-transform: translateY(0);
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes changeRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes changeRotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }

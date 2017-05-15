@@ -23,7 +23,6 @@ html,body{
   position:absolute;
   left:0;
   top:0;
-  overflow:hidden;
 }
 
 
@@ -37,6 +36,9 @@ html,body{
 .school-box .menu li:first-of-type{
   background-size: 60%;
   background-position: 50% 25%; 
+}
+.ZindexMax{
+  z-index:999999! important;
 }
 .zindexMax{
   z-index:999! important;
@@ -71,6 +73,77 @@ html,body{
     50%{opacity: 1}
     100%{opacity: 0.1}
 }
+
+/*--------------loading-------------*/
+.loading{
+ background-color:#FF4545; 
+ .precent-box{
+  width:76%;
+  height:28%;
+  .car-box{
+    width:30%;
+    height:28%;
+    left:0;
+    position:relative;
+    img{
+      width:150px;
+      height:85px;
+      float:right;
+    }
+    .lung-box{
+      width:150px;
+      height:85px;
+      right:-1%;
+      top:36%;
+
+      img.lung-01{
+        width:48px;
+        height:48px;
+        left:0;
+        top:0;
+        animation:changeRotate 1s linear infinite;
+      }
+      img.lung-02{
+        width:48px;
+        height:48px;
+        right:6%;
+        top:0;
+        animation:changeRotate 1s linear infinite;
+      }
+    }
+  }
+  .precent-line{
+    width:100%;
+    height:8px;/*px*/
+    border:1px solid #fff;/*px*/
+    border-radius:5px;/*px*/
+    position:relative;
+    left:0;
+    top:1%;
+    span{
+      width:0;
+      height:100%;
+      background-color:#7386D5;
+      display:inherit;
+      overflow:hidden; 
+      background-size: 15px 15px;
+      border-top-right-radius:5px;
+      border-bottom-right-radius:5px;
+      background-image:linear-gradient(135deg,hsla(0,0%,100%,.3) 25%,transparent 0,transparent 50%,hsla(0,0%,100%,.3) 0,hsla(0,0%,100%,.3) 75%,transparent 0,transparent);
+      border-top-left-radius:5px;
+      border-bottom-left-radius:5px;
+    }
+  }
+  .precent-num{
+    font-size:32px;
+    color:#fff;
+    width:100%;
+    text-align:center;
+    margin-top:3%;
+  }
+ }
+}
+
 
 /*--------------导航-------------*/
 .header{
@@ -269,7 +342,7 @@ html,body{
  z-index:1;
  .content-box{
   height:84.859%;
-  overflow-y:scroll! important;
+  overflow-y:scroll;
   -webkit-overflow-scrolling: touch;
    .banner{
     width:100%;
@@ -310,7 +383,6 @@ html,body{
    .news-box{
     .hot-news{
       transform:translateY(200%);
-      animation:fadeUp .5s linear 1s forwards;
       .themes{
         height:60px;
         line-height:60px;
@@ -456,9 +528,11 @@ html,body{
         }
       }
     }
+    .hot-news.current{
+      animation:fadeUp .5s linear .5s forwards;
+    }
     .school-news{
       transform:translateY(100%);
-      animation:fadeUp .5s linear 1.5s forwards;
       margin-top:10px;
       .themes{
         height:60px;
@@ -604,6 +678,9 @@ html,body{
           }
         }
       }
+    }
+    .school-news.current{
+      animation:fadeUp .5s linear 1s forwards;
     }
    }
  }
@@ -1590,6 +1667,11 @@ html,body{
   100%{transform:translateY(0);opacity:1;}
 }
 
+@keyframes changeRotate{
+  0%{transform:rotate(0deg);}
+  50%{transform:rotate(180deg);}
+  100%{transform:rotate(360deg);}
+}
 
 
 
