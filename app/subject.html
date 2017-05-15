@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- 禁用IOS电话识别 -->
+    <meta name="format-detection" content="telephone=no" />
+    <title>武汉工商学院</title>
+    <script>
+        var isClick = true;
+        var isCheck = false;
+        var isLoad = false;
+        var scale;
+        (function(psdw){
+            var dpr, rem;
+            var docEl = document.documentElement;
+            var fontEl = document.createElement('style');
+            scale = docEl.clientWidth / psdw;
+            scale = scale>1?1:scale;
+            rem = psdw/10;
+            rem = rem*scale;
+            // 动态写入样式
+            docEl.firstElementChild.appendChild(fontEl);
+            fontEl.innerHTML = 'html,body{font-size:' + rem + 'px!important;}';
+            dpr = window.devicePixelRatio || 1;
+            docEl.setAttribute('data-dpr', dpr);
+        })(640);
+    </script>
+    <link rel="stylesheet" href="css/app.min.css">
+    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+    <script src="touchslider.dev.js" type="text/javascript"></script>
+    <script src="jquery-1.8.2.min.js"></script>
+    <script src="bundle.js"></script>
+</head>
+<body>
+
+    <div class="wrapper page">
+
+        <!-- 头部 -->
+        <header class="header">
+            <i class="logo">武汉工商学院</i>
+            <i class="h-news pos">第一周</i>
+            <a class="meun-back pos" href="index.html">首页</a>
+        </header>
+
+        <!-- 首页 -->
+        <section class="subject">
+            <table class="s-box" border="1px">
+                <tr>
+                    <th>5月</th>
+                    <th>星期一</th>
+                    <th>星期二</th>
+                    <th>星期三</th>
+                    <th>星期四</th>
+                    <th>星期五</th>
+                    <th>星期六</th>
+                    <th>星期日</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td></td>
+                    <td class="gray">统计学实验@3201网络实验室</td>
+                    <td></td>
+                    <td class="gray">多媒体技术@综合楼309</td>
+                    <td class="pink">网络营销实验@3201网络实验室</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td class="puple">毛泽东思想和中国特色社会主义理论体系</td>
+                    <td class="green">网络营销实验@综合楼310</td>
+                    <td class="gray">网络营销实验@综合楼310</td>
+                    <td class="blue1">大学英语(4)@综合楼520</td>
+                    <td class="red">多媒体技术@3201网络实验室</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td class="blue2">体育@体育馆</td>
+                    <td class="gray">统计学@3201网络实验室</td>
+                    <td class="red">毛泽东思想和中国特色社会主义理论体系</td>
+                    <td></td>
+                    <td class="pink">物流与供应链管理@3201网络实验室</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td class="gray">大学英语(4)@综合楼520</td>
+                    <td></td>
+                    <td class="puple">消费者行为学</td>
+                    <td></td>
+                    <td class="orange">统计学@综合楼310</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </section>
+    </div>
+    
+
+
+
+</body>
+</html>

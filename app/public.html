@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- 禁用IOS电话识别 -->
+    <meta name="format-detection" content="telephone=no" />
+    <title>武汉工商学院</title>
+    <script>
+        var isClick = true;
+        var isCheck = false;
+        var isLoad = false;
+        var scale;
+        (function(psdw){
+            var dpr, rem;
+            var docEl = document.documentElement;
+            var fontEl = document.createElement('style');
+            scale = docEl.clientWidth / psdw;
+            scale = scale>1?1:scale;
+            rem = psdw/10;
+            rem = rem*scale;
+            // 动态写入样式
+            docEl.firstElementChild.appendChild(fontEl);
+            fontEl.innerHTML = 'html,body{font-size:' + rem + 'px!important;}';
+            dpr = window.devicePixelRatio || 1;
+            docEl.setAttribute('data-dpr', dpr);
+        })(640);
+    </script>
+    <link rel="stylesheet" href="css/app.min.css">
+    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+    <script src="touchslider.dev.js" type="text/javascript"></script>
+    <script src="jquery-1.8.2.min.js"></script>
+    <script src="bundle.js"></script>
+</head>
+<body>
+
+    <div class="wrapper page">
+        <header class="header">
+            <i class="logo">武汉工商学院</i>
+            <i class="meun-btn pos"></i>
+        </header>
+        <nav class="meun-content pos indexMin">
+            <div class="menu-box pos">
+                <ul>
+                    <li class="current home"><span>首页</span></li>
+                    <li><span>学校介绍</span></li>
+                    <li><span>院系介绍</span></li>
+                    <li><span>新闻快讯</span></li>
+                    <li><span>招生就业</span></li>
+                    <li><span>学生汇</span></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- 首页 -->
+        <section class="page p1 hotimg">
+            <!-- 首页banner -->
+            <ul class="banner" id="hotimg_img">
+                <li><img src="../images/banner-01.jpg"/></li>
+                <li><img src="../images/banner-02.jpg"/></li>
+                <li><img src="../images/banner-03.jpg"/></li>
+                <li><img src="../images/banner-04.jpg"/></li>
+                <li><img src="../images/banner-05.jpg"/></li>
+            </ul>
+            <ul class="num pos"></ul>
+        </section>
+    
+        <!-- 学生中心 -->
+        <section class="page stu-center indexMin">
+            <ul class="student">
+               <li><img src="../images/stu-01.jpg"/></li>
+               <li><img src="../images/stu-02.jpg"/></li>
+               <li><img src="../images/stu-03.jpg"/></li>
+               <li><img src="../images/stu-04.jpg"/></li>
+            </ul>
+        </section>
+
+        <!-- 官微 -->
+        <section class="page qcode indexMin">
+            <div class="center code-box">
+                <section class="wechat">
+                    <img src="../images/wechat.jpg"/>
+                    <p>长按二维码关注微信公众号</p>
+                </section>
+                <section class="weibo">
+                    <img src="../images/weibo.jpg"/>
+                    <p>长按二维码关注微信公众号</p>
+                </section>
+            </div>
+        </div>
+
+
+        <footer class="footer">
+            <ul class="icon-box">
+                <li class="home"><i></i><a href="index.html">首页</a></li>
+                <li class="student"><i></i><a href="">学生中心</a></li>
+                <li><i></i><a href="//buluo.qq.com/mobile/barindex.html?_wv=1027&_bid=128&from=pc&bid=18000">校园论坛</a></li>
+                <li class="public"><i></i><a href="">官微</a></li>
+            </ul>
+        </footer>
+    </div>
+    
+
+
+
+</body>
+</html>

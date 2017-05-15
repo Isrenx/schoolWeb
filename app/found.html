@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <!-- 禁用IOS电话识别 -->
+    <meta name="format-detection" content="telephone=no" />
+    <title>武汉工商学院</title>
+    <script>
+        var isClick = true;
+        var isCheck = false;
+        var isLoad = false;
+        var scale;
+        (function(psdw){
+            var dpr, rem;
+            var docEl = document.documentElement;
+            var fontEl = document.createElement('style');
+            scale = docEl.clientWidth / psdw;
+            scale = scale>1?1:scale;
+            rem = psdw/10;
+            rem = rem*scale;
+            // 动态写入样式
+            docEl.firstElementChild.appendChild(fontEl);
+            fontEl.innerHTML = 'html,body{font-size:' + rem + 'px!important;}';
+            dpr = window.devicePixelRatio || 1;
+            docEl.setAttribute('data-dpr', dpr);
+        })(640);
+    </script>
+    <link rel="stylesheet" href="css/app.min.css">
+    <link href="https://cdn.bootcss.com/Swiper/3.4.2/css/swiper.min.css" rel="stylesheet">
+    <script src="touchslider.dev.js" type="text/javascript"></script>
+    <script src="jquery-1.8.2.min.js"></script>
+    <script src="bundle.js"></script>
+</head>
+<body>
+
+    <div class="wrapper page">
+
+        <!-- 头部 -->
+        <header class="header">
+            <i class="logo">武汉工商学院</i>
+            <i class="h-news pos">招生就业</i>
+            <a class="meun-back pos" href="index.html">首页</a>
+        </header>
+
+        <!-- 首页 -->
+        <section class="page p1">
+            <div class="content-box news-con-box">
+
+                <!-- 首页中间内容 -->
+                <div class="news-box">
+                    <section class="hot-news">
+                        <section class="content">
+                            <div class="news-01">
+                                <div class="left">
+                                    <a href="news-01.html"><img src="../images/news.jpg" alt=""></a>
+                                    <p><span class="date">2017-03-03</span><span class="time">15:00</span></p>
+                                </div>
+                                <div class="right">
+                                    <h4><a href="news-01.html">武汉工商学院志愿者让”星星的孩子”不再孤单</a></h4>
+                                    <article class="con">“大哥哥，这是我妈妈，她每...<article>
+                                    <p class="mess"><span class="date">本站</span><span class="time">302次</span></p>
+                                </div>
+                            </div>
+                            <div class="news-02">
+                                <div class="left">
+                                    <a href="news-01.html"><img src="../images/news.jpg" alt=""></a>
+                                    <p><span class="date">2017-03-03</span><span class="time">15:00</span></p>
+                                </div>
+                                <div class="right">
+                                    <h4><a href="news-01.html">武汉工商学院志愿者让”星星的孩子”不再孤单</a></h4>
+                                    <article class="con">“大哥哥，这是我妈妈，她每...<article>
+                                    <p class="mess"><span class="date">本站</span><span class="time">302次</span></p>
+                                </div>
+                            </div>
+                            <div class="news-01">
+                                <div class="left">
+                                    <a href="news-01.html"><img src="../images/news.jpg" alt=""></a>
+                                    <p><span class="date">2017-03-03</span><span class="time">15:00</span></p>
+                                </div>
+                                <div class="right">
+                                    <h4><a href="news-01.html">武汉工商学院志愿者让”星星的孩子”不再孤单</a></h4>
+                                    <article class="con">“大哥哥，这是我妈妈，她每...<article>
+                                    <p class="mess"><span class="date">本站</span><span class="time">302次</span></p>
+                                </div>
+                            </div>
+                            <div class="news-02">
+                                <div class="left">
+                                    <a href="news-01.html"><img src="../images/news.jpg" alt=""></a>
+                                    <p><span class="date">2017-03-03</span><span class="time">15:00</span></p>
+                                </div>
+                                <div class="right">
+                                    <h4><a href="news-01.html">武汉工商学院志愿者让”星星的孩子”不再孤单</a></h4>
+                                    <article class="con">“大哥哥，这是我妈妈，她每...<article>
+                                    <p class="mess"><span class="date">本站</span><span class="time">302次</span></p>
+                                </div>
+                            </div>
+                            <div class="news-01">
+                                <div class="left">
+                                    <a href="news-01.html"><img src="../images/news.jpg" alt=""></a>
+                                    <p><span class="date">2017-03-03</span><span class="time">15:00</span></p>
+                                </div>
+                                <div class="right">
+                                    <h4><a href="news-01.html">武汉工商学院志愿者让”星星的孩子”不再孤单</a></h4>
+                                    <article class="con">“大哥哥，这是我妈妈，她每...<article>
+                                    <p class="mess"><span class="date">本站</span><span class="time">302次</span></p>
+                                </div>
+                            </div>
+                            <div class="news-02">
+                                <div class="left">
+                                    <a href="news-01.html"><img src="../images/news.jpg" alt=""></a>
+                                    <p><span class="date">2017-03-03</span><span class="time">15:00</span></p>
+                                </div>
+                                <div class="right">
+                                    <h4><a href="news-01.html">武汉工商学院志愿者让”星星的孩子”不再孤单</a></h4>
+                                    <article class="con">“大哥哥，这是我妈妈，她每...<article>
+                                    <p class="mess"><span class="date">本站</span><span class="time">302次</span></p>
+                                </div>
+                            </div>
+                            <div class="news-01">
+                                <div class="left">
+                                    <a href="news-01.html"><img src="../images/news.jpg" alt=""></a>
+                                    <p><span class="date">2017-03-03</span><span class="time">15:00</span></p>
+                                </div>
+                                <div class="right">
+                                    <h4><a href="news-01.html">武汉工商学院志愿者让”星星的孩子”不再孤单</a></h4>
+                                    <article class="con">“大哥哥，这是我妈妈，她每...<article>
+                                    <p class="mess"><span class="date">本站</span><span class="time">302次</span></p>
+                                </div>
+                            </div>
+                            <div class="news-02">
+                                <div class="left">
+                                    <a href="news-01.html"><img src="../images/news.jpg" alt=""></a>
+                                    <p><span class="date">2017-03-03</span><span class="time">15:00</span></p>
+                                </div>
+                                <div class="right">
+                                    <h4><a href="news-01.html">武汉工商学院志愿者让”星星的孩子”不再孤单</a></h4>
+                                    <article class="con">“大哥哥，这是我妈妈，她每...<article>
+                                    <p class="mess"><span class="date">本站</span><span class="time">302次</span></p>
+                                </div>
+                            </div>
+                        </section>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+
+
+
+</body>
+</html>
